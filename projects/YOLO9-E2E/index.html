@@ -259,6 +259,25 @@ result = model(SAMPLE_IMAGE, save=True)</code></pre>
             </div>
         </section>
 
+        <!-- BibTeX Section -->
+        <section class="content-section" id="bibtex-section">
+            <h2 class="section-title">BibTeX Citation</h2>
+            <p style="margin-bottom: 16px;">If you find this project or the model weights useful, please cite it using the following BibTeX entry:</p>
+            <div class="code-container">
+                <div class="code-header">
+                    <span>citation.bib</span>
+                    <button class="code-copy-btn" id="btn-copy-bibtex">Copy Citation</button>
+                </div>
+                <pre><code id="code-snippet-bibtex">@online{YOLO9-E2E,
+  author = {Narsi Reddy},
+  title = {YOLO9-E2E : Making YOLO9 NMS Free},
+  url = {https://testdummyvt.github.io/projects/YOLO9-E2E/index.html},
+  year = {2026},
+  urldate = {2026-06-22}
+}</code></pre>
+            </div>
+        </section>
+
         <!-- Footer -->
         <footer>
             <p>&copy; 2026 YOLO9-E2E Project. Built with LibreYOLO.</p>
@@ -270,7 +289,7 @@ result = model(SAMPLE_IMAGE, save=True)</code></pre>
 
 
         // Copy Code Script helper
-        function setupCopyButton(buttonId, snippetId) {
+        function setupCopyButton(buttonId, snippetId, defaultLabel = 'Copy Code') {
             const btn = document.getElementById(buttonId);
             const snippet = document.getElementById(snippetId);
             if (btn && snippet) {
@@ -280,7 +299,7 @@ result = model(SAMPLE_IMAGE, save=True)</code></pre>
                         btn.style.color = '#10b981'; // green accent
                         
                         setTimeout(() => {
-                            btn.textContent = 'Copy Code';
+                            btn.textContent = defaultLabel;
                             btn.style.color = '';
                         }, 2000);
                     }).catch(err => {
@@ -290,7 +309,8 @@ result = model(SAMPLE_IMAGE, save=True)</code></pre>
             }
         }
 
-        setupCopyButton('btn-copy-predict', 'code-snippet-predict');
+        setupCopyButton('btn-copy-predict', 'code-snippet-predict', 'Copy Code');
+        setupCopyButton('btn-copy-bibtex', 'code-snippet-bibtex', 'Copy Citation');
     </script>
 </body>
 </html>
