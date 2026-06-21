@@ -3,77 +3,294 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Narsi | Profile</title>
-    <meta name="description" content="Personal profile and social links of Narsi (@testdummyvt).">
+    <title>YOLO9-E2E: Making YOLO9 NMS Free | Narsi Reddy</title>
+    <meta name="description" content="YOLO9-E2E is an end-to-end, NMS-free version of the YOLOv9 object detection model. Built using the LibreYOLO package.">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://testdummyvt.github.io/">
-    <meta property="og:title" content="Narsi | Profile">
-    <meta property="og:description" content="Personal profile and social links of Narsi (@testdummyvt).">
-    <meta property="og:image" content="https://github.com/testdummyvt.png">
+    <meta property="og:url" content="https://testdummyvt.github.io/projects/YOLO9-E2E/">
+    <meta property="og:title" content="YOLO9-E2E: Making YOLO9 NMS Free">
+    <meta property="og:description" content="YOLO9-E2E is an end-to-end, NMS-free version of the YOLOv9 object detection model. Built using the LibreYOLO package.">
+    <meta property="og:image" content="architecture.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://testdummyvt.github.io/">
-    <meta property="twitter:title" content="Narsi | Profile">
-    <meta property="twitter:description" content="Personal profile and social links of Narsi (@testdummyvt).">
-    <meta property="twitter:image" content="https://github.com/testdummyvt.png">
+    <meta property="twitter:url" content="https://testdummyvt.github.io/projects/YOLO9-E2E/">
+    <meta property="twitter:title" content="YOLO9-E2E: Making YOLO9 NMS Free">
+    <meta property="twitter:description" content="YOLO9-E2E is an end-to-end, NMS-free version of the YOLOv9 object detection model. Built using the LibreYOLO package.">
+    <meta property="twitter:image" content="architecture.png">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- CSS stylesheet -->
+    <!-- Style Sheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main class="profile-container">
-        <div class="profile-card" id="profile-card">
-            <div class="avatar-container">
-                <img src="https://github.com/testdummyvt.png" alt="Narsi's Profile Picture" class="profile-avatar" draggable="false">
-            </div>
-            
-            <header class="profile-info">
-                <h1 class="profile-name">Narsi Reddy</h1>
-                <p class="profile-handle">@testdummyvt</p>
-                <p class="profile-bio">Exploring AI/ML and their applications for Edge Computing.</p>
-            </header>
+    <main class="project-container">
+        <!-- Back Link -->
+        <a href="../../index.html" class="back-link" id="nav-back-home">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            Back to Profile
+        </a>
 
-            <nav class="social-links" aria-label="Social Media Links">
-                <a href="https://github.com/testdummyvt" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="GitHub">
-                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <!-- Hero Header -->
+        <header class="hero">
+            <span class="project-tag">LibreYOLO Project</span>
+            <h1 class="project-title" id="main-title">YOLO9-E2E : Making YOLO9 NMS Free</h1>
+            <p class="project-subtitle">An end-to-end, NMS-free implementation of YOLOv9 leveraging the LibreYOLO framework.</p>
+            
+
+
+            <!-- Author -->
+            <div class="author-list">
+                <a href="https://github.com/testdummyvt" target="_blank" rel="noopener noreferrer" class="author-name" id="author-narsi">Narsi Reddy</a>
+            </div>
+
+            <!-- Call to Actions -->
+            <div class="links-container">
+                <a href="https://github.com/testdummyvt/libreyolo" target="_blank" rel="noopener noreferrer" class="btn-link primary" id="btn-github-code">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
                         <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
                     </svg>
-                    <span class="tooltip">GitHub</span>
+                    Source Code
                 </a>
-                
-                <a href="https://www.linkedin.com/in/itsnarsi/" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="LinkedIn">
-                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                <a href="https://github.com/LibreYOLO/libreyolo/issues/84" target="_blank" rel="noopener noreferrer" class="btn-link secondary" id="btn-github-issue">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="12"></line>
+                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
                     </svg>
-                    <span class="tooltip">LinkedIn</span>
+                    Issue #84 Discussion
                 </a>
-                
-                <a href="https://x.com/testdummyvt" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="X (Twitter)">
-                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                <a href="https://huggingface.co/testdummyvt/yolov9_nmsfree_exp" target="_blank" rel="noopener noreferrer" class="btn-link secondary" id="btn-hf-logs">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
                     </svg>
-                    <span class="tooltip">X.com</span>
+                    Training Logs
                 </a>
-                
-                <a href="https://scholar.google.com/citations?user=F9QgOicAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Google Scholar">
-                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.854 3.64A7.47 7.47 0 0 1 12 10a7.47 7.47 0 0 1 7.146 3.14L24 9.5zm7.2 16.5c0-1.8-1.5-3.3-3.3-3.3s-3.3 1.5-3.3 3.3a3.3 3.3 0 0 0 6.6 0z"/>
+                <a href="https://huggingface.co/LibreYOLO/LibreYOLO9E2Et" target="_blank" rel="noopener noreferrer" class="btn-link secondary" id="btn-download-weights">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"></path>
                     </svg>
-                    <span class="tooltip">Google Scholar</span>
+                    Download Weights
                 </a>
-            </nav>
-        </div>
+            </div>
+        </header>
+
+        <!-- Abstract Section -->
+        <section class="content-section" id="abstract-section">
+            <h2 class="section-title">Abstract</h2>
+            <p class="abstract-text">
+                Traditional object detection architectures, including YOLOv9, rely on Non-Maximum Suppression (NMS) during post-processing to eliminate duplicate bounding boxes. However, NMS introduces significant latency. In this project, I introduce <strong>YOLO9-E2E</strong>, an experimental NMS-free (End-to-End) variant of the YOLOv9 Tiny model built using the <strong>LibreYOLO</strong> framework. By incorporating a dedicated One-to-One (1-to-1) head matching strategy (inspired by the NMS-free training methodology introduced in the <a href="https://arxiv.org/abs/2405.14458" target="_blank" rel="noopener noreferrer">YOLOv10 paper</a>) alongside standard training, I achieve direct object detection without NMS post-processing. Because of my single RTX 3080 GPU setup, I decided to only finetune the newly introduced One-to-One head by migrating pretrained YOLOv9 weights. While training the whole model end-to-end could potentially improve the performance further, this targeted finetuning approach is highly resource-efficient and yielded strong performance. YOLO9-E2E retains a competitive performance on the COCO val2017 dataset, achieving an mAP50 of 0.4813 and mAP50-95 of 0.3403, offering a seamless, NMS-free object detector for edge and real-time deployment.
+            </p>
+        </section>
+
+        <!-- Implementation Section -->
+        <section class="content-section" id="implementation-section">
+            <h2 class="section-title">Implementation</h2>
+            <div class="implementation-grid">
+                
+                <div class="step-card">
+                    <div class="step-header">
+                        <span class="step-number">1</span>
+                        <h3 class="step-title">Building an E2E YOLOv9</h3>
+                    </div>
+                    <div class="step-desc">
+                        <p>To eliminate Non-Maximum Suppression (NMS), I transitioned the architecture from a standard One-to-Many representation to a direct One-to-One matching scheme, drawing inspiration from the NMS-free training methodology introduced in the <a href="https://arxiv.org/abs/2405.14458" target="_blank" rel="noopener noreferrer">YOLOv10 model paper</a>:</p>
+                        <ul>
+                            <li><strong>LibreYOLO Framework:</strong> Leveraged the extensible pipeline of LibreYOLO to easily configure and custom-tailor the heads of the YOLOv9-Tiny architecture.</li>
+                            <li><strong>One-to-One Head Addition:</strong> Standard models generate multiple bounding box predictions per object during inference, necessitating NMS. By integrating a dedicated One-to-One assignment head, the model learns to output exactly one bounding box per ground-truth object.</li>
+                            <li><strong>Dual Label Assignment:</strong> During training, both a One-to-Many head and a One-to-One head are utilized. The One-to-Many head acts as a strong auxiliary supervisor to guide feature representation, while the One-to-One head is optimized for direct, NMS-free inference.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-header">
+                        <span class="step-number">2</span>
+                        <h3 class="step-title">Targeted One-to-One Finetuning</h3>
+                    </div>
+                    <div class="step-desc">
+                        <p>Training an entire object detector from scratch requires extensive computational resources. Because of my single RTX 3080 GPU setup, I decided to only finetune the newly initialized One-to-One head:</p>
+                        <ul>
+                            <li><strong>Weights Migration:</strong> Copied and loaded pretrained weights for the <strong>Backbone</strong>, <strong>Neck</strong>, and auxiliary <strong>One-to-Many head</strong> from a standard pretrained YOLOv9 model.</li>
+                            <li><strong>Selective Freezing & Training:</strong> Kept standard layers frozen and only optimized the <strong>One-to-One head</strong>. This allowed for incredibly fast and lightweight training. Note that while training the whole model end-to-end could potentially improve the performance further, this targeted finetuning approach was ideal for my hardware constraints and achieved highly successful metrics.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Architecture Diagram -->
+                <div class="diagram-container">
+                    <img src="architecture.png" alt="YOLO9-E2E Weight Migration & Training Diagram" class="diagram-img">
+                    <p class="diagram-caption">Figure 1: YOLO9-E2E Weight Migration and Targeted Training pipeline, freezing standard features and optimizing only the One-to-One Head.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Validation Results Section -->
+        <section class="content-section" id="results-section">
+            <h2 class="section-title">Validation & Results</h2>
+            <p>Validation was conducted on the full COCO val2017 dataset (5,000 images) using an NVIDIA GPU. Below are the detailed COCO evaluator results for the baseline YOLOv9-Tiny (NMS) model, followed by a comparative analysis of the NMS-free YOLO9-E2E model.</p>
+            
+            <p style="margin-top: 20px; margin-bottom: 10px; font-weight: 600;">Baseline YOLOv9-t (NMS) Detailed COCO Metrics:</p>
+            <div class="results-table-container">
+                <table class="results-table" id="baseline-detailed-table">
+                    <thead>
+                        <tr>
+                            <th>COCO Metric</th>
+                            <th>Value</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>mAP50-95</td>
+                            <td class="metric-value">0.3716</td>
+                            <td>Mean Average Precision across standard thresholds (IoU=0.50:0.95)</td>
+                        </tr>
+                        <tr>
+                            <td>mAP50</td>
+                            <td class="metric-value">0.5235</td>
+                            <td>Average Precision at 0.50 IoU (IoU=0.50)</td>
+                        </tr>
+                        <tr>
+                            <td>mAP75</td>
+                            <td class="metric-value">0.3951</td>
+                            <td>Average Precision at 0.75 IoU (IoU=0.75)</td>
+                        </tr>
+                        <tr>
+                            <td>mAP_small</td>
+                            <td class="metric-value">0.1187</td>
+                            <td>Average Precision for small objects (area &lt; 32² pixels)</td>
+                        </tr>
+                        <tr>
+                            <td>mAP_medium</td>
+                            <td class="metric-value">0.3376</td>
+                            <td>Average Precision for medium objects (32² &lt; area &lt; 96² pixels)</td>
+                        </tr>
+                        <tr>
+                            <td>mAP_large</td>
+                            <td class="metric-value">0.5325</td>
+                            <td>Average Precision for large objects (area &gt; 96² pixels)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p style="margin-top: 28px; margin-bottom: 12px; font-weight: 600;">Comparison: Standard YOLOv9-t (NMS) vs. YOLO9-E2E (NMS-Free):</p>
+            <div class="results-table-container">
+                <table class="results-table" id="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Model Variant</th>
+                            <th>NMS-Free</th>
+                            <th>mAP @ 0.5 (mAP50)</th>
+                            <th>mAP @ 0.5:0.95 (mAP50-95)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>YOLOv9-t (Standard Baseline)</td>
+                            <td>❌ No (Requires NMS)</td>
+                            <td class="metric-value">0.5235</td>
+                            <td class="metric-value">0.3716</td>
+                        </tr>
+                        <tr style="background-color: var(--accent-light); font-weight: bold;">
+                            <td>YOLO9-E2E (Ours)</td>
+                            <td>✅ Yes (NMS-Free)</td>
+                            <td class="metric-value" style="color: var(--accent-color);">0.4813</td>
+                            <td class="metric-value" style="color: var(--accent-color);">0.3403</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p style="margin-top: 16px; font-size: 0.9rem; color: var(--text-secondary); font-style: italic;">
+                *Note: The performance of the NMS-Free model could potentially improve further if the entire model were trained fully end-to-end, similar to the NMS baseline version, rather than only finetuning the One-to-One head under hardware constraints.
+            </p>
+        </section>
+
+        <!-- Usage Section -->
+        <section class="content-section" id="usage-section">
+            <h2 class="section-title">Model Usage</h2>
+            <p>
+                The pretrained YOLO9-E2E model weights are hosted on Hugging Face. You can access and download each model variant separately from their respective repositories:
+            </p>
+            <ul style="margin-left: 24px; margin-top: 10px; margin-bottom: 16px;">
+                <li><strong>Tiny (t) variant:</strong> <a href="https://huggingface.co/LibreYOLO/LibreYOLO9E2Et" target="_blank" rel="noopener noreferrer">LibreYOLO/LibreYOLO9E2Et</a></li>
+                <li><strong>Small (s) variant:</strong> <a href="https://huggingface.co/LibreYOLO/LibreYOLO9E2Es" target="_blank" rel="noopener noreferrer">LibreYOLO/LibreYOLO9E2Es</a></li>
+                <li><strong>Medium (m) variant:</strong> <a href="https://huggingface.co/LibreYOLO/LibreYOLO9E2Em" target="_blank" rel="noopener noreferrer">LibreYOLO/LibreYOLO9E2Em</a></li>
+                <li><strong>Compact (c) variant:</strong> <a href="https://huggingface.co/LibreYOLO/LibreYOLO9E2Ec" target="_blank" rel="noopener noreferrer">LibreYOLO/LibreYOLO9E2Ec</a></li>
+            </ul>
+            
+            <p style="margin-top: 16px;">You can easily load and run NMS-Free predictions on your images using the official <strong>LibreYOLO</strong> package API:</p>
+            
+            <div class="code-container">
+                <div class="code-header">
+                    <span>predict.py</span>
+                    <button class="code-copy-btn" id="btn-copy-predict">Copy Code</button>
+                </div>
+                <pre><code id="code-snippet-predict">from libreyolo import LibreYOLO, SAMPLE_IMAGE
+
+# Load the pretrained NMS-Free Tiny model from HuggingFace / local path
+model = LibreYOLO("LibreYOLO9E2Et.pt")
+
+# Run direct NMS-Free inference on a sample image
+result = model(SAMPLE_IMAGE, save=True)</code></pre>
+            </div>
+        </section>
+
+        <!-- Acknowledgments Section -->
+        <section class="content-section" id="acknowledgments-section">
+            <h2 class="section-title">Acknowledgments and Contributions</h2>
+            <div class="acknowledgments-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+                <div class="acknowledgments-text">
+                    I would like to express my gratitude to <a href="https://github.com/EHxuban11" target="_blank" rel="noopener noreferrer">Xuban CECCON (EHxuban11)</a> for his incredible assistance during this project. He generously helped me train all variations of the model, validating and testing their metrics, ensuring the accuracy of my final benchmarks.
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 YOLO9-E2E Project. Built with LibreYOLO.</p>
+        </footer>
     </main>
 
-    <!-- JS script for interactivity -->
-    <script src="app.js"></script>
+    <!-- Micro Interactivity Script -->
+    <script>
+
+
+        // Copy Code Script helper
+        function setupCopyButton(buttonId, snippetId) {
+            const btn = document.getElementById(buttonId);
+            const snippet = document.getElementById(snippetId);
+            if (btn && snippet) {
+                btn.addEventListener('click', () => {
+                    navigator.clipboard.writeText(snippet.textContent).then(() => {
+                        btn.textContent = 'Copied!';
+                        btn.style.color = '#10b981'; // green accent
+                        
+                        setTimeout(() => {
+                            btn.textContent = 'Copy Code';
+                            btn.style.color = '';
+                        }, 2000);
+                    }).catch(err => {
+                        console.error('Could not copy text: ', err);
+                    });
+                });
+            }
+        }
+
+        setupCopyButton('btn-copy-predict', 'code-snippet-predict');
+    </script>
 </body>
 </html>

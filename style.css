@@ -188,6 +188,35 @@ body {
     transform: translateX(-50%) scale(1) translateY(4px);
 }
 
+/* Projects Section */
+.profile-projects {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1.5px solid var(--card-border);
+}
+
+.projects-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 12px 20px;
+    background: var(--accent-color);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 14px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.12);
+}
+
+.projects-btn:hover {
+    background: #4338ca;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(79, 70, 229, 0.22);
+}
+
 /* Responsive adjustment */
 @media (max-width: 480px) {
     .profile-card {
